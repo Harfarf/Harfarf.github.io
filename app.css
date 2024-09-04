@@ -3,7 +3,8 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #777777;
+    color: rgb(255, 255, 255);
 }
 
 header {
@@ -11,6 +12,15 @@ header {
     color: rgb(255, 255, 255);
     padding: 10px 0;
     text-align: center;
+}
+h1.title {
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+}
+h2.subtitle {
+    color: rgb(151, 255, 151);
+    margin-top: 0; 
+    margin-bottom: 0;
 }
 
 nav ul {
@@ -28,10 +38,10 @@ main {
 }
 
 footer {
-    background-color: #272727;
+    background-color: #000000;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 1px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -43,16 +53,19 @@ footer {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
-    color: white;
-    background-color: #007BFF;
+    font-weight: bold;
+    color: white; /* Text color */
+    background-color: black; /* Button background color */
+    border: 2px solid gray; /* Gray outline */
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Added transition for color change */
 }
 
 .button1:hover {
-    background-color: #0056b3;
+    background-color: gray; /* Background becomes gray on hover */
+    color: black; /* Text color changes to black on hover */
 }
 
 ul {
