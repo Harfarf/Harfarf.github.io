@@ -60,7 +60,7 @@ footer {
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Added transition for color change */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .button1:hover {
