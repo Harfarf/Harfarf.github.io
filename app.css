@@ -1,3 +1,4 @@
+/* PAGE CONFIG */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -6,6 +7,13 @@ body {
     background-color: #777777;
     color: rgb(255, 255, 255);
 }
+.body2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #777777;
+    color: #ffffff;
+}
 
 header {
     background-color: #272727;
@@ -13,21 +21,11 @@ header {
     padding: 10px 0;
     text-align: center;
 }
-h1.title {
-    color: rgb(255, 255, 255);
-    margin-bottom: 5px;
-}
-h2.subtitle {
-    color: rgb(151, 255, 151);
-    margin-top: 0; 
-    margin-bottom: 0;
-}
 
 nav ul {
     list-style: none;
     padding: 0;
 }
-
 nav ul li {
     display: inline;
     margin: 0 10px;
@@ -35,6 +33,12 @@ nav ul li {
 
 main {
     padding: 20px;
+}
+.main2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
 footer {
@@ -47,8 +51,42 @@ footer {
     width: 100%;
 }
 
+/* TEXT TITLES */
+h1.title {
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+}
+h2.subtitle {
+    color: rgb(151, 255, 151);
+    margin-top: 0; 
+    margin-bottom: 0;
+}
+h2.subtitle2 {
+    color: rgb(151, 208, 255);
+    margin-top: 0; 
+    margin-bottom: 0;
+}
+h2.subtitle3 {
+    color: rgb(255, 219, 151);
+    margin-top: 0; 
+    margin-bottom: 0;
+    text-shadow:
+        1px 1px 0 black,
+       -1px -1px 0 black,
+        1px -1px 0 black,
+       -1px 1px 0 black;
+}
 
-/* BUTTONS */
+/* TEXT COLORS */
+.Yhighlight {
+    color: rgb(253, 253, 114);
+}
+.Ghighlight {
+    color: rgb(103, 212, 81);
+}
+
+
+/* BUTTONS IN MENU BAR */
 .button1 {
     display: inline-block;
     padding: 10px 20px;
@@ -64,7 +102,7 @@ footer {
 }
 
 .button1:hover {
-    background-color: gray; /* Background becomes gray on hover */
+    background-color: rgb(128, 128, 128); /* Background becomes gray on hover */
     color: black; /* Text color changes to black on hover */
 }
 
@@ -76,4 +114,51 @@ ul {
 ul li {
     display: inline; /* Makes the list items horizontal */
     margin-right: 10px; /* Adds space between buttons */
+}
+
+
+/* GAME PAGES BUTTONS */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.game-page-button {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.game-page-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('path-to-your-cat-image.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.game-page-button:hover::before {
+    opacity: 1;
+}
+
+.game-page-button:hover {
+    color: transparent;
 }

@@ -12,20 +12,24 @@
         <script src="app.js" defer></script>
     </head>
 
-    <body>
+    <body class="body2">
         <header>
-            <h1>Lucía Fernández</h1>
+            <h1 class="title">Lucía Fernández</h1>
+            <h2 class="subtitle2">⟡ PROJECTS ⟡</h2>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="button1">Home</a></li>
-                    <li><a href="projects.html" class="button1">Projects</a></li> 
-                    <li><a onClick = "CreateAlert('Welcome to my Page!')" class="button1">Contact</a></li>
+                    <li><a class="button1" href="index.html">Home</a></li>
+                    <li><a class="button1" href="projects.html">Projects</a></li> 
+                    <li><a class="button1" onClick = "CreateAlert('Welcome to my Page!')">Contact</a></li>
                 </ul>
             </nav>
         </header>
     
-        <main> 
-
+        <main class="main2"> 
+            <div class="button-container">
+                <button class="game-page-button">Button 1</button>
+                <button class="game-page-button" onClick = "CreateAlert('In Progress')">Button 2</button>
+            </div>
         </main>
     
         <footer>
