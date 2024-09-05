@@ -126,10 +126,10 @@ ul li {
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.game-page-button.blue {
+.game-page-button.yellow {
     --button-text-color: white;
     --button-bg-color: rgb(0, 0, 0);
-    --button-border-color: rgb(0, 140, 255);
+    --button-border-color: rgb(255, 245, 111);
 }
 .game-page-button.red {
     --button-text-color: white;
