@@ -1,11 +1,14 @@
 /* PAGE CONFIG */
-body {
+.body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: #777777;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
 }
 
 header {
@@ -24,8 +27,12 @@ nav ul li {
     margin: 0 10px;
 }
 
-main {
+.main {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
 }
 
 footer {
@@ -44,29 +51,17 @@ footer {
     margin-bottom: 5px;
 }
 .subtitle {
-    color: rgb(151, 255, 151);
+    color: rgb(151, 208, 255);
     margin-top: 0; 
     margin-bottom: 0;
 }
 .subtitle2 {
-    color: rgb(255, 219, 151);
-    margin-top: 0; 
-    margin-bottom: 0;
-    text-shadow:
-        1px 1px 0 black,
-       -1px -1px 0 black,
-        1px -1px 0 black,
-       -1px 1px 0 black;
+    color: rgb(151, 255, 151);
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    clear: both;
 }
-
-/* TEXT COLORS */
-.Yhighlight {
-    color: rgb(253, 253, 114);
-}
-.Ghighlight {
-    color: rgb(103, 212, 81);
-}
-
 
 /* BUTTONS IN MENU BAR */
 .buttonMenu {
@@ -95,4 +90,54 @@ ul {
 ul li {
     display: inline; /* Makes the list items horizontal */
     margin-right: 10px; /* Adds space between buttons */
+}
+
+
+/* GAME PAGES BUTTONS */
+.button-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to new lines */
+    justify-content: center;
+    gap: 30px;
+    margin: 10px 0;
+}
+
+.game-page-button {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.game-page-button::before { /* Element over the button */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/qqqq.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.game-page-button:hover::before {
+    opacity: 1;
+}
+
+.game-page-button:hover {
+    color: transparent;
 }
