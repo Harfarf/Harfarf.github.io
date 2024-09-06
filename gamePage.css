@@ -176,6 +176,8 @@ ul li {
     margin-top: 20px;
     width: 450px;
     height:282px;
+    border-radius: 5px;
+    border: 5px solid #a70101;
 }
 .images-below p {
     max-width: 30%;

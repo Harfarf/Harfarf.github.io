@@ -1,7 +1,7 @@
 const walkrosImages = [
     'images/Walkros/redEye.png',
     'images/Walkros/walkros-1.png',
-    'images/Walkros/walkros-2.jpg',
+    'images/Walkros/walkros-2.png',
     'images/Walkros/greenEye.png', 
     'images/Walkros/lobo.png',
     'images/Walkros/Josua.png',
