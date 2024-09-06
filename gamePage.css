@@ -158,6 +158,16 @@ ul li {
     width: 300px;
     height: auto;
 }
+.images-below p {
+    max-width: 30%;
+    margin: 0 20px;
+    margin-top: 30px;
+    font-size: 1rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
 
 /* Responsive adjustments */
 @media (min-width: 768px) {
