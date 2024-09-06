@@ -76,15 +76,25 @@ ul li {
     margin-bottom: 5px;
 }
 .gameTitle {
-    color: rgb(151, 213, 255);
+        --bg-color: rgb(255, 255, 255);
+        --shadow-color: rgb(109, 109, 109);
+    color: var(--bg-color);
     margin-top: 0; 
     margin-bottom: 0;
     font-size: 30px;
     text-shadow:
-        1px 2px 0 rgb(168, 92, 238),
+        1px 2px 0  var(--shadow-color),
        -1px -1px 0 black,
         1px -1px 0 black,
        -1px 1px 0 black;
+}
+.gameTitle.ancientDimensions {
+    --bg-color: rgb(151, 213, 255);
+    --shadow-color: rgb(168, 92, 238);
+}
+.gameTitle.walkros {
+    --bg-color: rgb(168, 0, 0);
+    --shadow-color: rgb(25, 119, 6);
 }
 
 
@@ -107,15 +117,19 @@ ul li {
 }
 /* ------------------- Video */
 .video {
+        --border: 5px solid #f0a519;
     grid-area: video;
     width: 80%;
     max-width: 800px;
     height: auto;
     margin-top: 50px;
-    border: 5px solid #f0a519; /* Border color and width */
+    border: var(--border);
     border-radius: 10px; /* rounded corners */
     padding: 0px; /* space between border and video */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.video.red {
+    --border: 5px solid #a70101;
 }
 
 /* ------------------- Images around the page */
@@ -155,7 +169,8 @@ ul li {
     margin-bottom: 30px;
 }
 .images-below img {
-    width: 300px;
+        --width: 300px;
+    width: var(--width);
     height: auto;
 }
 .images-below p {
