@@ -1,4 +1,4 @@
-/* PAGE CONFIG */
+/* ------------------- PAGE CONFIG */
 .body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -10,14 +10,12 @@
     background-color: #777777;
     color: #ffffff;
 }
-
 header {
     background-color: #272727;
     color: rgb(255, 255, 255);
     padding: 10px 0;
     text-align: center;
 }
-
 nav ul {
     list-style: none;
     padding: 0;
@@ -26,15 +24,23 @@ nav ul li {
     display: inline;
     margin: 0 10px;
 }
-
 .main {
-    padding: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
+    justify-content: center;
+    align-items: flex-start; /* Aligns content at the top */
+    height: 100vh;
+    position: relative;
 }
-
+.content {
+    position: relative;
+    width: 100%; /* Full width to allow centering */
+    height: 80%; /* Adjust height if needed */
+    display: flex;
+    flex-direction: column; /* Arrange video and image vertically */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center; /* Center items horizontally */
+    padding-top: 20px; /* Space above the video */
+}
 footer {
     background-color: #000000;
     color: white;
@@ -45,7 +51,34 @@ footer {
     width: 100%;
 }
 
-/* TEXT TITLES */
+/* ------------------- BUTTONS IN MENU BAR */
+.buttonMenu {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white; /* Text color */
+    background-color: black; /* Button background color */
+    border: 2px solid gray; /* Gray outline */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.buttonMenu:hover {
+    background-color: rgb(128, 128, 128); /* Background becomes gray on hover */
+    color: black; /* Text color changes to black on hover */
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    display: inline; /* Makes the list items horizontal */
+    margin-right: 10px; /* Adds space between buttons */
+}
+
+/* ------------------- TEXT TITLES */
 .title {
     color: rgb(255, 255, 255);
     margin-bottom: 5px;
@@ -62,33 +95,41 @@ footer {
        -1px 1px 0 black;
 }
 
-/* BUTTONS IN MENU BAR */
-.buttonMenu {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: white; /* Text color */
-    background-color: black; /* Button background color */
-    border: 2px solid gray; /* Gray outline */
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+
+/* ------------------- Video */
+.main-video {
+    width: 40%;
 }
 
-.buttonMenu:hover {
-    background-color: rgb(128, 128, 128); /* Background becomes gray on hover */
-    color: black; /* Text color changes to black on hover */
+/* ------------------- Images around the page */
+.image {
+    position: absolute;
+    width: 300px;
+    height: 300px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-ul li {
-    display: inline; /* Makes the list items horizontal */
-    margin-right: 10px; /* Adds space between buttons */
+.imageTopLeft {
+    top: 10%;
+    left: 5%;
 }
 
+.imageBottomLeft {
+    bottom: 0%;
+    left: 5%;
+}
 
+.imageTopRight {
+    top: 0%;
+    right: 5%;
+}
+
+.imageBottomRight {
+    bottom: 0%;
+    right: 5%;
+}
+
+.imageBelowVideo {
+    width: 20%;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
