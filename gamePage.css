@@ -1,5 +1,5 @@
 /* ------------------- PAGE CONFIG */
-.body {
+body, html {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -9,6 +9,8 @@
     flex-direction: column;
     background-color: #777777;
     color: #ffffff;
+    box-sizing: border-box;
+    height: 100%;
 }
 header {
     background-color: #272727;
@@ -27,19 +29,9 @@ nav ul li {
 .main {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Aligns content at the top */
+    align-items: center;
     height: 100vh;
-    position: relative;
-}
-.content {
-    position: relative;
-    width: 100%; /* Full width to allow centering */
-    height: 80%; /* Adjust height if needed */
-    display: flex;
-    flex-direction: column; /* Arrange video and image vertically */
-    justify-content: flex-start; /* Align items to the top */
-    align-items: center; /* Center items horizontally */
-    padding-top: 20px; /* Space above the video */
+    width: 100%;
 }
 footer {
     background-color: #000000;
@@ -96,40 +88,71 @@ ul li {
 }
 
 
+
+/* ------------------- Page Body */
+.container {
+    display: grid;
+    grid-template-areas: 
+        "images-left video images-right"
+        "images-below images-below images-below";
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px; /* Adjust spacing between items */
+    max-width: 1200px; /* Optional: to limit the width of your container */
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
 /* ------------------- Video */
-.main-video {
-    width: 40%;
+.video {
+    grid-area: video;
+    width: 80%;
+    max-width: 800px; /* Adjust based on your needs */
+    height: auto;
 }
 
 /* ------------------- Images around the page */
-.image {
-    position: absolute;
-    width: 300px;
-    height: 300px;
+
+.images-left {
+    grid-area: images-left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.imageTopLeft {
-    top: 10%;
-    left: 5%;
+.images-right {
+    grid-area: images-right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.imageBottomLeft {
-    bottom: 0%;
-    left: 5%;
+.images-left img, .images-right img {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin: 20px;
 }
 
-.imageTopRight {
-    top: 0%;
-    right: 5%;
+.images-below {
+    grid-area: images-below;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px; /* Adjust space above the image */
 }
 
-.imageBottomRight {
-    bottom: 0%;
-    right: 5%;
+.images-below img {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
 }
 
-.imageBelowVideo {
-    width: 20%;
-    margin-top: 30px;
-    margin-bottom: 100px;
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .container {
+        grid-template-areas: 
+            "images-left video images-right"
+            "images-left images-below images-right";
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr auto 1fr;
+    }
 }
