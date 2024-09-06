@@ -102,13 +102,15 @@ ul li {
     width: 100%;
     align-items: center;
     justify-items: center;
+    margin-bottom: 100px;
 }
 /* ------------------- Video */
 .video {
     grid-area: video;
     width: 80%;
-    max-width: 800px; /* Adjust based on your needs */
+    max-width: 800px;
     height: auto;
+    margin-top: 50px;
 }
 
 /* ------------------- Images around the page */
@@ -127,10 +129,16 @@ ul li {
     align-items: center;
 }
 
+.images-left, .images-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .images-left img, .images-right img {
-    width: 150px; /* Adjust size as needed */
+    width: 200px;
     height: auto;
-    margin: 20px;
+    margin: 10px 0;
 }
 
 .images-below {
@@ -138,11 +146,12 @@ ul li {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 20px; /* Adjust space above the image */
+    margin-top: 1px;
+    margin-bottom: 30px;
 }
 
 .images-below img {
-    width: 150px; /* Adjust size as needed */
+    width: 300px;
     height: auto;
 }
 
