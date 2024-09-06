@@ -169,9 +169,13 @@ ul li {
     margin-bottom: 30px;
 }
 .images-below img {
-        --width: 300px;
-    width: var(--width);
+    width: 300px;
     height: auto;
+}
+.images-below img.wider {
+    margin-top: 20px;
+    width: 450px;
+    height:282px;
 }
 .images-below p {
     max-width: 30%;
