@@ -110,21 +110,28 @@ ul li {
         --button-text-color: white; /* CSS variables */
         --button-bg-color: black;
         --button-border-color: rgb(230, 230, 230);
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background-color: var(--button-bg-color);
-    color: var(--button-text-color);
-    border: 2px solid var(--button-border-color);
-    border-radius: 5px;
-    text-align: center;
-    line-height: 150px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease;
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        background-color: var(--button-bg-color);
+        color: var(--button-text-color);
+        border: 2px solid var(--button-border-color);
+        border-radius: 5px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    
+        /* Flexbox for vertical centering on the button's text */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px; /* Add some padding to ensure text doesn't touch borders */
+        white-space: normal; /* Allow text to wrap to a second line */
+        text-align: center;
 }
 .game-page-button.yellow {
     --button-text-color: white;
@@ -139,6 +146,7 @@ ul li {
 
 .game-page-button::before { /* Element over the button */
         --button-bg-image: url('images/placeholder.png');
+        --image-transparency: 0.3;
     content: "";
     position: absolute;
     top: 0;
@@ -148,7 +156,7 @@ ul li {
     background-image: var(--button-bg-image);
     background-size: cover;
     background-position: center;
-    opacity: 0.05;
+    opacity: var(--image-transparency);
     transition: opacity 0.3s ease;
 }
 
@@ -161,13 +169,38 @@ ul li {
 
 .game-page-button.itchio::before {
     --button-bg-image: url('images/logo_itchIo.png');
+    --image-transparency: 0.05;
 }
 .game-page-button.roblox::before {
     --button-bg-image: url('images/logo_roblox.png');
+    --image-transparency: 0.05;
 }
 .game-page-button.artStation::before {
     --button-bg-image: url('images/logo_ArtStation.png');
+    --image-transparency: 0.05;
 }
 .game-page-button.gitHub::before {
     --button-bg-image: url('images/logo_GitHub.png');
+    --image-transparency: 0.05;
+}
+.game-page-button.ancientDim::before {
+    --button-bg-image: url('images/AncientDimensions/icon.png');
+}
+.game-page-button.walkros::before {
+    --button-bg-image: url('images/Walkros/redEye.png');
+}
+.game-page-button.dieSeek::before {
+    --button-bg-image: url('images/DieAndSeek/image2.png');
+}
+.game-page-button.abejuego::before {
+    --button-bg-image: url('images/Abejuego/title.png');
+}
+.game-page-button.hagakure::before {
+    --button-bg-image: url('images/Hagakure/background.png');
+}
+.game-page-button.marte::before {
+    --button-bg-image: url('images/M-arte/marte-image6.png');
+}
+.game-page-button.lostInHangover::before {
+    --button-bg-image: url('images/LostInHangover/LostInHangover.png');
 }
