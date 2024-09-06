@@ -110,28 +110,28 @@ ul li {
         --button-text-color: white; /* CSS variables */
         --button-bg-color: black;
         --button-border-color: rgb(230, 230, 230);
-        display: inline-block;
-        width: 150px;
-        height: 150px;
-        background-color: var(--button-bg-color);
-        color: var(--button-text-color);
-        border: 2px solid var(--button-border-color);
-        border-radius: 5px;
-        text-align: center;
-        font-size: 16px;
-        font-weight: bold;
-        cursor: pointer;
-        position: relative;
-        overflow: hidden;
-        transition: all 0.3s ease;
-    
-        /* Flexbox for vertical centering on the button's text */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 5px; /* Add some padding to ensure text doesn't touch borders */
-        white-space: normal; /* Allow text to wrap to a second line */
-        text-align: center;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: 2px solid var(--button-border-color);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    /* Flexbox for vertical centering on the button's text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px; /* Add some padding to ensure text doesn't touch borders */
+    white-space: normal; /* Allow text to wrap to a second line */
+    text-align: center;
 }
 .game-page-button.yellow {
     --button-text-color: white;
