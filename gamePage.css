@@ -111,6 +111,10 @@ ul li {
     max-width: 800px;
     height: auto;
     margin-top: 50px;
+    border: 5px solid #f0a519; /* Border color and width */
+    border-radius: 10px; /* rounded corners */
+    padding: 0px; /* space between border and video */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* ------------------- Images around the page */
