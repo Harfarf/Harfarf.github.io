@@ -6,6 +6,11 @@ const walkrosImages = [
     'images/Walkros/lobo.png',
     'images/Walkros/Josua.png',
 ];
+const dieAndSeekImages = [
+    'images/DieAndSeek/image2.png',
+    'images/DieAndSeek/image4.png',
+    'images/DieAndSeek/image3.png',
+];
 
 
 
@@ -25,4 +30,4 @@ function createSlideshow(imageArray, elementId, interval) {
     setInterval(changeImage, interval);
 }
 createSlideshow(walkrosImages, 'slideshow-image-walkros', 2000);
-createSlideshow(anotherSlideshowImages, 'slideshow-image-another', 3000);
+createSlideshow(dieAndSeekImages, 'slideshow-image-dieAndSeek', 2000);

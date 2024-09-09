@@ -96,6 +96,10 @@ ul li {
     --bg-color: rgb(168, 0, 0);
     --shadow-color: rgb(25, 119, 6);
 }
+.gameTitle.dieAndSeek {
+    --bg-color: rgb(134, 115, 92);
+    --shadow-color: rgb(97, 0, 0);
+}
 
 
 
@@ -130,6 +134,9 @@ ul li {
 }
 .video.red {
     --border: 5px solid #a70101;
+}
+.video.brown {
+    --border: 5px solid rgb(134, 115, 92);
 }
 
 /* ------------------- Images around the page */
