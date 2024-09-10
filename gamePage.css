@@ -108,6 +108,10 @@ ul li {
     --bg-color: rgb(195, 60, 236);
     --shadow-color: rgb(189, 189, 189);
 }
+.gameTitle.marte {
+    --bg-color: rgb(236, 160, 60);
+    --shadow-color: rgb(105, 25, 0);
+}
 
 
 
@@ -129,16 +133,21 @@ ul li {
 }
 /* ------------------- Video */
 .video {
-        --border: 5px solid #f0a519;
+    --border: 5px solid #f0a519;
     grid-area: video;
-    width: 80%;
-    max-width: 800px;
-    height: auto;
+    width: auto;
+    max-width: 80%; /* Max width restriction */
+    height: auto; /* Keeps the height proportional to the width */
+    max-height: 40vh; /* Limits the height */
+    object-fit: contain; /* Ensures the video maintains its aspect ratio */
     margin-top: 50px;
     border: var(--border);
-    border-radius: 10px; /* rounded corners */
-    padding: 0px; /* space between border and video */
+    border-radius: 10px; /* Rounded corners */
+    padding: 0px; /* Space between border and video */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centers the video horizontally */
 }
 .video.red {
     --border: 5px solid #a70101;

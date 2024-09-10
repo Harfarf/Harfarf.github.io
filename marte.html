@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Lucía Fernández</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Lucia's Porfolio">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="gamePage.css">
+        <script src="app.js" defer></script>
+    </head>
+
+    <body class="body">
+        <header>
+            <h1 class="title">Lucía Fernández</h1>
+            <h2 class="gameTitle marte">M-ARTE</h2>
+            <nav>
+                <ul>
+                    <li><a class="buttonMenu" href="index.html">Home</a></li>
+                    <li><a class="buttonMenu" href="projects.html">Projects</a></li> 
+                    <li><a class="buttonMenu" onClick = "CreateAlert('Coming Soon!')">More</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main class="main">
+            <div class="container">
+                <div class="images-left">
+                    <img src="images/M-arte/robot.png" alt="Image 1">
+                    <img src="images/M-arte/robot2.png" alt="Image 2">
+                </div>
+                <video class="video" controls>
+                    <source src="images/M-arte/marte-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="images-right">
+                    <img src="images/M-arte/robot2.png" alt="Image 3">
+                    <p>A little adventure on a ship exploring the planet of Mars</p>
+                    <img src="images/M-arte/robot.png" alt="Image 4">
+                </div>
+                <div class="images-below">
+                    <div class="slideshow"> <!-- Slideshow -->
+                        <img class="wider" id="slideshow-image-marte" src="images/M-arte/marte-image1.png" alt="Marte Image">
+                    </div>
+                </div>
+                <div class="buttons-frame">
+                    <a class="buttonDownload" onClick="CreateAlert('Coming Soon!')">DOWNLOAD</a>
+                    <a class="buttonDownload" onClick="CreateAlert('Coming Soon!')">DOWNLOAD</a>
+                </div>
+            </div>
+        </main>
+    
+        <footer>
+            <p>&copy; 2024 Lucía Fernández. All rights reserved.</p>
+        </footer>
+    </body>
+
+
+</html>

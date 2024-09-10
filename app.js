@@ -23,6 +23,16 @@ const hagakureImages = [
     'images/Hagakure/image2.png',
     'images/Hagakure/image4.jpeg',
 ];
+const marteImages = [
+    'images/M-arte/marte-image1.png',
+    'images/M-arte/marte-image2.png',
+    'images/M-arte/marte-image3.png',
+    'images/M-arte/marte-image4.png',
+    'images/M-arte/marte-image5.png',
+    'images/M-arte/marte-image6.png',
+    'images/M-arte/marte-image7.png',
+    'images/M-arte/marte-image8.png',
+];
 
 
 
@@ -45,3 +55,4 @@ createSlideshow(walkrosImages, 'slideshow-image-walkros', 2000);
 createSlideshow(dieAndSeekImages, 'slideshow-image-dieAndSeek', 2000);
 createSlideshow(abejuegoImages, 'slideshow-image-abejuego', 2000);
 createSlideshow(hagakureImages, 'slideshow-image-hagakure', 2000);
+createSlideshow(marteImages, 'slideshow-image-marte', 2000);
