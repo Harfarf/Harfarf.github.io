@@ -113,8 +113,8 @@ ul li {
     --shadow-color: rgb(105, 25, 0);
 }
 .gameTitle.lostInHangover {
-    --bg-color: rgb(184, 57, 7);
-    --shadow-color: rgb(30, 255, 0);
+    --bg-color: rgb(0, 209, 224);
+    --shadow-color: rgb(218, 149, 0);
 }
 
 
@@ -164,6 +164,9 @@ ul li {
 }
 .video.purple {
     --border: 5px solid rgb(195, 60, 236);
+}
+.video.blue {
+    --border: 5px solid rgb(0, 209, 224);
 }
 
 /* ------------------- Images around the page */
@@ -256,4 +259,22 @@ ul li {
 
 .buttonDownload:hover {
     background-color: #833f00;
+}
+
+/* ------------------- Used Programs Logos */
+footer p {
+    margin: 0;
+    padding: 0;
+}
+.programs-used {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;     /* Align items vertically */
+    gap: 5px;               /* Spacing between items */
+}
+.programs-used img {
+    height: 40px; /* Adjust the size of the images */
+}
+.programs-used p {
+    font-size: 0.9em;
 }
