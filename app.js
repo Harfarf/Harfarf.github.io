@@ -11,6 +11,11 @@ const dieAndSeekImages = [
     'images/DieAndSeek/image4.png',
     'images/DieAndSeek/image3.png',
 ];
+const abejuegoImages = [
+    'images/Abejuego/title.png',
+    'images/Abejuego/gameplay.jfif',
+    'images/Abejuego/howToPlay.jpg',
+];
 
 
 
@@ -31,3 +36,4 @@ function createSlideshow(imageArray, elementId, interval) {
 }
 createSlideshow(walkrosImages, 'slideshow-image-walkros', 2000);
 createSlideshow(dieAndSeekImages, 'slideshow-image-dieAndSeek', 2000);
+createSlideshow(abejuegoImages, 'slideshow-image-abejuego', 2000);
