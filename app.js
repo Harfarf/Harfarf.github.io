@@ -1,10 +1,16 @@
 const walkrosImages = [
     'images/Walkros/redEye.png',
+    'images/Walkros/gameplay-1.png',
     'images/Walkros/walkros-1.png',
+    'images/Walkros/gameplay-2.png',
     'images/Walkros/walkros-2.png',
+    'images/Walkros/gameplay-3.png',
     'images/Walkros/greenEye.png', 
+    'images/Walkros/gameplay-4.png',
     'images/Walkros/lobo.png',
+    'images/Walkros/gameplay-5.png',
     'images/Walkros/Josua.png',
+    'images/Walkros/gameplay-6.png',
 ];
 const dieAndSeekImages = [
     'images/DieAndSeek/image2.png',
@@ -56,7 +62,7 @@ function createSlideshow(imageArray, elementId, interval) {
 
     setInterval(changeImage, interval);
 }
-createSlideshow(walkrosImages, 'slideshow-image-walkros', 2000);
+createSlideshow(walkrosImages, 'slideshow-image-walkros', 3000);
 createSlideshow(dieAndSeekImages, 'slideshow-image-dieAndSeek', 2000);
 createSlideshow(abejuegoImages, 'slideshow-image-abejuego', 2000);
 createSlideshow(hagakureImages, 'slideshow-image-hagakure', 2000);
