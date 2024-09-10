@@ -33,6 +33,11 @@ const marteImages = [
     'images/M-arte/marte-image7.png',
     'images/M-arte/marte-image8.png',
 ];
+const lostInHangoverImages = [
+    'images/LostInHangover/MENU.png',
+    'images/LostInHangover/LostInHangover.png',
+    'images/LostInHangover/Game.png',
+]
 
 
 
@@ -56,3 +61,4 @@ createSlideshow(dieAndSeekImages, 'slideshow-image-dieAndSeek', 2000);
 createSlideshow(abejuegoImages, 'slideshow-image-abejuego', 2000);
 createSlideshow(hagakureImages, 'slideshow-image-hagakure', 2000);
 createSlideshow(marteImages, 'slideshow-image-marte', 2000);
+createSlideshow(lostInHangoverImages, 'slideshow-image-lostInHangover', 2000);

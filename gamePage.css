@@ -112,6 +112,10 @@ ul li {
     --bg-color: rgb(236, 160, 60);
     --shadow-color: rgb(105, 25, 0);
 }
+.gameTitle.lostInHangover {
+    --bg-color: rgb(184, 57, 7);
+    --shadow-color: rgb(30, 255, 0);
+}
 
 
 
