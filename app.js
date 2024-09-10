@@ -16,6 +16,13 @@ const abejuegoImages = [
     'images/Abejuego/gameplay.jfif',
     'images/Abejuego/howToPlay.jpg',
 ];
+const hagakureImages = [
+    'images/Hagakure/background.png',
+    'images/Hagakure/image1.png',
+    'images/Hagakure/image3.jpeg',
+    'images/Hagakure/image2.png',
+    'images/Hagakure/image4.jpeg',
+];
 
 
 
@@ -37,3 +44,4 @@ function createSlideshow(imageArray, elementId, interval) {
 createSlideshow(walkrosImages, 'slideshow-image-walkros', 2000);
 createSlideshow(dieAndSeekImages, 'slideshow-image-dieAndSeek', 2000);
 createSlideshow(abejuegoImages, 'slideshow-image-abejuego', 2000);
+createSlideshow(hagakureImages, 'slideshow-image-hagakure', 2000);

@@ -104,6 +104,10 @@ ul li {
     --bg-color: rgb(75, 167, 0);
     --shadow-color: rgb(219, 216, 8);
 }
+.gameTitle.hagakure {
+    --bg-color: rgb(195, 60, 236);
+    --shadow-color: rgb(189, 189, 189);
+}
 
 
 
@@ -144,6 +148,9 @@ ul li {
 }
 .video.green {
     --border: 5px solid #14a701;
+}
+.video.purple {
+    --border: 5px solid rgb(195, 60, 236);
 }
 
 /* ------------------- Images around the page */
