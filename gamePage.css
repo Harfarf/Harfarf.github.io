@@ -248,7 +248,9 @@ ul li {
 }
 
 .buttonDownload {
-    background-color: #f0a519;
+        --color: #f0a519;
+        --hoverColor: #a0480e;
+    background-color: var(--color);
     padding: 10px 20px; 
     color: #000000;
     font-weight: bold; /* Bold text */
@@ -259,11 +261,19 @@ ul li {
     border: 3px solid #ffffff;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    &:hover {
+        background-color: var(--hoverColor);
+    }
+}
+.buttonDownload.socialMedia {
+    --color: #19f0e5;
+    --hoverColor: #0e48a0;
+}
+.buttonDownload.news {
+    --color: #37d85a;
+    --hoverColor: #13802b;
 }
 
-.buttonDownload:hover {
-    background-color: #833f00;
-}
 
 /* ------------------- Used Programs Logos */
 footer p {
