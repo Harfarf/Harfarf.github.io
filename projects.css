@@ -1,21 +1,40 @@
+:root {
+    --blue1: rgb(101, 255, 255);
+    --blue2: rgb(0, 33, 105);
+    --blue3: rgb(4, 0, 58);
+
+    --green1:  rgb(151, 255, 151);
+    --green2:  #1a691e;
+
+    --yellow1:  rgb(255, 253, 151);
+
+    --black: rgb(0, 0, 0);
+}
+
 /* PAGE CONFIG */
-.body {
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #777777;
-    color: #ffffff;
+    background-color: var(--blue3);
+    color: rgb(255, 255, 255);
 }
 
 header {
-    background-color: #272727;
+    background-color: var(--blue2);
     color: rgb(255, 255, 255);
     padding: 10px 0;
     text-align: center;
+    /* Borders */
+    border-radius: 0 0 20px 20px; /* Rounds the bottom corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 2px solid var(--blue1);
+    border-right: 2px solid var(--blue1);
+    border-bottom: 2px solid var(--blue1);
+    /* Space on the sides */
+    margin: 0 auto;
+    max-width: 90%;
 }
 
 nav ul {
@@ -49,14 +68,18 @@ footer {
 .title {
     color: rgb(255, 255, 255);
     margin-bottom: 5px;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 .subtitle {
-    color: rgb(151, 208, 255);
+    color: var(--blue1);
     margin-top: 0; 
     margin-bottom: 0;
 }
 .subtitle2 {
-        --bg-color: rgb(151, 255, 151);
+        --bg-color: var(--green1);
     color: var(--bg-color);
     display: block;
     text-align: center;
@@ -64,7 +87,7 @@ footer {
     clear: both;
 }
 .subtitle2.yellow {
-    --bg-color: rgb(255, 253, 151);
+    --bg-color:  var(--yellow1);
 }
 
 /* BUTTONS IN MENU BAR */
@@ -73,18 +96,18 @@ footer {
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
-    color: white; /* Text color */
-    background-color: black; /* Button background color */
-    border: 2px solid gray; /* Gray outline */
+    color: var(--blue1);
+    background-color: var(--black);
+    border: 2px solid var(--blue1);
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.buttonMenu:hover {
-    background-color: rgb(128, 128, 128); /* Background becomes gray on hover */
-    color: black; /* Text color changes to black on hover */
+    &:hover {
+        background-color: var(--blue1); /* Background changes on hover */
+        color: var(--blue3); /* Text color changes on hover */
+        border: 2px solid var(--blue1);
+    }
 }
 
 ul {
@@ -136,12 +159,7 @@ ul li {
 .game-page-button.yellow {
     --button-text-color: white;
     --button-bg-color: rgb(0, 0, 0);
-    --button-border-color: rgb(255, 245, 111);
-}
-.game-page-button.red {
-    --button-text-color: white;
-    --button-bg-color: rgb(0, 0, 0);
-    --button-border-color: rgb(182, 0, 0);
+    --button-border-color:  var(--yellow1);
 }
 
 .game-page-button::before { /* Element over the button */
