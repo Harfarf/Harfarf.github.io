@@ -250,15 +250,15 @@ ul li {
 .buttonDownload {
         --color: #f0a519;
         --hoverColor: #a0480e;
-    background-color: var(--color);
+    background-color: #000000;
     padding: 10px 20px; 
-    color: #000000;
+    color: var(--color);
     font-weight: bold; /* Bold text */
     font-family: 'Arial', sans-serif; /* Font family */
     font-size: 16px; /* Font size */
     text-decoration: none;
     border-radius: 10px;
-    border: 3px solid #ffffff;
+    border: 3px solid var(--color);
     font-weight: bold;
     transition: background-color 0.3s ease;
     &:hover {
@@ -271,7 +271,7 @@ ul li {
 }
 .buttonDownload.news {
     --color: #37d85a;
-    --hoverColor: #13802b;
+    --hoverColor: #0c521b;
 }
 
 
