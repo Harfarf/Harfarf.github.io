@@ -51,7 +51,7 @@ footer {
 .subtitle2 {
     color: rgb(255, 219, 151);
     margin-top: 0; 
-    margin-bottom: 0;
+    margin-bottom: 15px;
     text-shadow:
         1px 1px 0 black,
        -1px -1px 0 black,
@@ -95,4 +95,50 @@ ul {
 ul li {
     display: inline; /* Makes the list items horizontal */
     margin-right: 10px; /* Adds space between buttons */
+}
+
+/* PAGE BODY */
+#about-contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#leftSide {
+    width: 45%;
+}
+#rightSide {
+    width: 45%;
+    min-height: 600px; /* Ensures the container is at least 600px tall */
+    padding-bottom: 100px;
+}
+
+/* CONTACT ME */
+#contact {
+    margin-top: 30px;
+    form {
+        margin-top: 10px;
+    }
+}
+
+input[type="text"], input[type="email"], textarea {
+    color: rgb(0, 41, 102);
+    width: 70%;
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    &:hover {
+        background-color: #1f5722;
+    }
 }

@@ -14,7 +14,9 @@
 
     <body>
         <header>
-            <h1 class="title">⟡⋆ Lucía Fernández ⋆⟡</h1>
+            <h1 class="title">
+                <img src="images/LuData/Lu_Banner.png" alt="Lucía Fernández Logo" />
+            </h1>
             <h2 class="subtitle">Game Developer</h2>
             <nav>
                 <ul>
@@ -26,17 +28,39 @@
         </header>
     
         <main> 
-            <section id="about">
-                <h2 class="subtitle2">✩ About</h2>
-                <p> Hey! I'm Lucía, <span class="Ghighlight">Game Developer</span>.<br> 
-                    I have a Bachelor of Science in Video Game Development, and programming knowledge in <span class="Yhighlight">C#</span>, <span class="Yhighlight">Lua</span>, <span class="Yhighlight">Html</span>, <span class="Yhighlight">CSS</span> & <span class="Yhighlight">JS</span>, <br>
-                    I also have experience with game Engines like <span class="Ghighlight">UnityEngine</span>, <span class="Ghighlight">Unreal</span> and <span class="Ghighlight">RobloxStudio</span> having worked on several projects with them. <br>
-                    Always seeking for new knowledge and self-improvement ! <br> Feel free to contact me !</p>
-            </section>
+            <section id="about-contact-wrapper">
+                <!-- Left side with text and contact form -->
+                <div id="leftSide">
+                     <!-- Text -->
+                    <h2 class="subtitle2">✩ About</h2>
+                    <p> Hey! I'm Lucía, <span class="Ghighlight">Game Developer</span>.<br> 
+                        I have a Bachelor of Science in Video Game Development, and programming knowledge in <span class="Yhighlight">C#</span>, <span class="Yhighlight">Lua</span>, <span class="Yhighlight">Html</span>, <span class="Yhighlight">CSS</span> & <span class="Yhighlight">JS</span>, <br>
+                        I also have experience with game engines like <span class="Ghighlight">UnityEngine</span>, <span class="Ghighlight">Unreal</span>, and <span class="Ghighlight">RobloxStudio</span> having worked on several projects with them. <br>
+                        Always seeking for new knowledge and self-improvement! <br> Feel free to contact me!</p>
     
-            <section id="contact">
-                <h2 class="subtitle2">✩ Contact</h2>
-                <p>You can connect with me on <a href="https://www.linkedin.com/in/luciafertam" target="_blank">LinkedIn</a>.</p>
+                    <!-- Contact form -->
+                    <section id="contact">
+                        <h2 class="subtitle2">✩ Contact Me</h2>
+                        <form action="mailto:luciaft2000@hotmail.com" method="POST" enctype="text/plain">
+                            <label for="name">Name:</label><br>
+                            <input type="text" id="name" name="name" required><br>
+    
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" required><br>
+    
+                            <label for="message">Message:</label><br>
+                            <textarea id="message" name="message" rows="4" required></textarea><br>
+    
+                            <input type="submit" value="Send">
+                        </form>
+                    </section>
+                </div>
+    
+                <!-- Right side with PDF holder -->
+                <div id="rightSide">
+                    <h2 class="subtitle2">✩ My Resume</h2>
+                    <embed src="images/LuData/Lucía Fernández Tamargo _ CV.pdf" type="application/pdf" width="70%" height="800px" />
+                </div>
             </section>
         </main>
     
