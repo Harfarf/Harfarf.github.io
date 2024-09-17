@@ -9,6 +9,7 @@
     --yellow1:  rgb(255, 253, 151);
 
     --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
 }
 
 /* PAGE CONFIG */
@@ -130,9 +131,9 @@ ul li {
 }
 
 .game-page-button {
-        --button-text-color: white; /* CSS variables */
-        --button-bg-color: black;
-        --button-border-color: rgb(230, 230, 230);
+        --button-text-color: var(--white); /* CSS variables */
+        --button-bg-color: var(--black);
+        --button-border-color: var(--white);
     display: inline-block;
     width: 150px;
     height: 150px;
@@ -157,8 +158,8 @@ ul li {
     text-align: center;
 }
 .game-page-button.yellow {
-    --button-text-color: white;
-    --button-bg-color: rgb(0, 0, 0);
+    --button-text-color: var(--white);
+    --button-bg-color: var(--black);
     --button-border-color:  var(--yellow1);
 }
 

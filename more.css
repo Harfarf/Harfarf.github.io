@@ -1,0 +1,192 @@
+:root {
+    --blue1: rgb(101, 255, 255);
+    --blue2: rgb(0, 33, 105);
+    --blue3: rgb(4, 0, 58);
+
+    --green1:  rgb(151, 255, 151);
+    --green2:  #1a691e;
+
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+}
+
+/* PAGE CONFIG */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 40px;
+    background-color: var(--blue3);
+    color: rgb(255, 255, 255);
+}
+
+header {
+    background-color: var(--blue2);
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    text-align: center;
+    /* Borders */
+    border-radius: 0 0 20px 20px; /* Rounds the bottom corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 2px solid var(--blue1);
+    border-right: 2px solid var(--blue1);
+    border-bottom: 2px solid var(--blue1);
+    /* Space on the sides */
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 1px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* TEXT TITLES */
+.title {
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+.subtitle {
+    color: var(--green1);
+    margin-top: 0; 
+    margin-bottom: 0;
+}
+
+/* BUTTONS IN MENU BAR */
+.buttonMenu {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--blue1);
+    background-color: var(--black);
+    border: 2px solid var(--blue1);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    &:hover {
+        background-color: var(--blue1); /* Background changes on hover */
+        color: var(--blue3); /* Text color changes on hover */
+        border: 2px solid var(--blue1);
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    display: inline; /* Makes the list items horizontal */
+    margin-right: 10px; /* Adds space between buttons */
+}
+
+
+/* TEXT BOX */
+.text-box {
+    border: 2px solid var(--blue1);
+    padding: 20px; /* Space between text and border */
+    background-color: var(--blue2);
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    max-width: 600px;
+    margin-top: 50px;
+    margin-left: 70px;
+    /*  margin: 0 auto; */
+    h2 {
+        margin-top: 0;
+        margin-bottom: 10px
+    }
+    p {
+        margin: 0;
+    }
+}
+
+
+/* CARDS GRID */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensure 3 columns */
+    grid-auto-rows: minmax(100px, auto);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+        --bg-color:  rgb(153, 153, 153);
+        --border-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--bg-color);
+}
+.card.GameDesign {
+    --bg-color:  rgb(50, 104, 59);
+    --border-color: rgb(155, 255, 171);
+}
+.card.Programming {
+    --bg-color:  rgb(45, 99, 134);
+    --border-color: rgb(155, 240, 255);
+}
+.card.Art {
+    --bg-color:  rgb(104, 50, 57);
+    --border-color: rgb(255, 155, 172);
+}
+
+.card-content {
+        --text-color:  rgb(0, 0, 0);
+        --title-color:  rgb(0, 0, 0);
+    padding: 15px;
+    color: var(--text-color);
+
+    h3 {
+        margin: 0 0 10px;
+        font-weight: bold;
+        color: var(--title-color);
+    }
+    p {
+        margin: 0;
+    }
+}
+
+.card-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    overflow: visible;
+
+    img {
+        width: auto;
+        height: 200px;
+        object-fit: cover;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 30px;
+    }
+}
