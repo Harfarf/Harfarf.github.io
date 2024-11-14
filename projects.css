@@ -187,19 +187,19 @@ ul li {
 }
 
 .game-page-button.itchio::before {
-    --button-bg-image: url('images/logo_itchIo.png');
+    --button-bg-image: url('images/Logos/logo_itchIo.png');
     --image-transparency: 0.05;
 }
 .game-page-button.roblox::before {
-    --button-bg-image: url('images/logo_roblox.png');
+    --button-bg-image: url('images/Logos/logo_roblox.png');
     --image-transparency: 0.05;
 }
 .game-page-button.artStation::before {
-    --button-bg-image: url('images/logo_ArtStation.png');
+    --button-bg-image: url('images/Logos/logo_ArtStation.png');
     --image-transparency: 0.05;
 }
 .game-page-button.gitHub::before {
-    --button-bg-image: url('images/logo_GitHub.png');
+    --button-bg-image: url('images/Logos/logo_GitHub.png');
     --image-transparency: 0.05;
 }
 .game-page-button.ancientDim::before {
