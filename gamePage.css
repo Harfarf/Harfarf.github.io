@@ -135,6 +135,10 @@ ul li {
     --bg-color: rgb(0, 209, 224);
     --shadow-color: rgb(218, 149, 0);
 }
+.gameTitle.arProject {
+    --bg-color: rgb(0, 224, 30);
+    --shadow-color: rgb(0, 104, 22);
+}
 
 
 
