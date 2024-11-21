@@ -77,11 +77,6 @@ footer {
     margin-top: 0; 
     margin-bottom: 15px;
     text-align: left;
-/*     text-shadow:
-        1px 1px 0 var(--blue2),
-       -1px -1px 0 var(--blue2),
-        1px -1px 0 var(--blue2),
-       -1px 1px 0 var(--blue2); */
 }
 
 /* TEXT COLORS */
@@ -102,10 +97,9 @@ footer {
     max-width: 600px;
     margin-top: 50px;
     margin-left: 70px;
-    /*  margin: 0 auto; */
     h2 {
         margin-top: 0;
-        margin-bottom: 10px
+        margin-bottom: 10px;
     }
     p {
         margin: 0;
@@ -163,7 +157,7 @@ ul li {
 #contact {
     background-color: var(--blue2);
     border: 2px solid var(--blue1);
-    border-radius: 8px; 
+    border-radius: 8px;
     padding: 20px;
     text-align: center;
     margin-top: 30px;
@@ -196,5 +190,63 @@ input[type="submit"] {
         background-color: var(--green2);
         color: var(--green1);
         border: 2px solid var(--green1);
+    }
+}
+
+/* MEDIA QUERIES FOR SMALL SCREENS (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Header and navigation */
+    header {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    /* About and contact wrapper */
+    #about-contact-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #leftSide, #rightSide {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .text-box {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    #contact {
+        max-width: 100%;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    /* Embed (Resume) */
+    #rightSide embed {
+        width: 100%;
+        height: 500px;
+    }
+
+    footer {
+        position: relative;
     }
 }
