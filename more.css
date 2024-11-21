@@ -156,6 +156,18 @@ ul li {
     --border-color: rgb(255, 155, 172);
 }
 
+/* Special Text Styles */
+.Ghighlight {
+    color: rgb(155, 255, 171);
+}
+.Rhighlight {
+    color: rgb(255, 155, 172);
+}
+.Bhighlight {
+    color: rgb(155, 240, 255);
+}
+
+
 /* Card Content */
 .card-content {
         --text-color: rgb(0, 0, 0);
