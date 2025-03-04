@@ -15,7 +15,7 @@
 /* PAGE CONFIG */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1;
     margin: 0;
     padding: 0;
     background-color: var(--blue3);
@@ -90,6 +90,9 @@ footer {
 .subtitle2.yellow {
     --bg-color:  var(--yellow1);
 }
+.subtitle2.blue {
+    --bg-color:  var(--blue1);
+}
 
 /* BUTTONS IN MENU BAR */
 .buttonMenu {
@@ -162,6 +165,11 @@ ul li {
     --button-bg-color: var(--black);
     --button-border-color:  var(--yellow1);
 }
+.game-page-button.green {
+    --button-text-color: var(--white);
+    --button-bg-color: var(--black);
+    --button-border-color:  var(--green1);
+}
 
 .game-page-button::before { /* Element over the button */
         --button-bg-image: url('images/placeholder.png');
@@ -222,4 +230,16 @@ ul li {
 }
 .game-page-button.lostInHangover::before {
     --button-bg-image: url('images/LostInHangover/LostInHangover.png');
+}
+.game-page-button.PokyDrivers::before {
+    --button-bg-image: url('images/WorkGames/PokyDrivers.png');
+}
+.game-page-button.TheZebraMan::before {
+    --button-bg-image: url('images/WorkGames/TZM.png');
+}
+.game-page-button.MLBRoblox::before {
+    --button-bg-image: url('images/WorkGames/MLB.png');
+}
+.game-page-button.CaminosLegendarios::before {
+    --button-bg-image: url('images/WorkGames/CaminosLegendarios.png');
 }
