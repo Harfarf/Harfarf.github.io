@@ -279,18 +279,6 @@ ul li {
     font-family: 'Lato', sans-serif;
 }
 
-/* Responsive adjustments */
-@media (min-width: 768px) {
-    .container {
-        grid-template-areas: 
-        "images-left video images-right"
-        "images-left images-below images-right"
-        "images-left buttons-frame images-right";
-        grid-template-rows: auto auto;
-        grid-template-columns: 1fr auto 1fr;
-    }
-}
-
 /* ------------------- Download Button */
 .buttons-frame {
     grid-area: buttons-frame;
@@ -447,13 +435,13 @@ footer p {
         justify-content: center; /* Horizontally center the images */
         overflow: hidden; /* Hide parts of images that overflow */
         position: relative; /* For proper positioning of images */
-    }
 
-    /* Ensure all slideshow images have consistent size */
-    .slideshow img {
-        height: 100%; /* Ensure all images fill the container's height */
-        width: auto;  /* Automatically adjust width based on the height */
-        object-fit: contain; /* Ensure images retain their aspect ratio */
-        display: block; /* Prevent inline display issues */
+        /* Ensure all slideshow images have consistent size */
+        img {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+            display: block;
+        }
     }
 }

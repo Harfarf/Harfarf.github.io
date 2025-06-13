@@ -244,3 +244,6 @@ ul li {
 .game-page-button.CaminosLegendarios::before {
     --button-bg-image: url('images/WorkGames/CaminosLegendarios.png');
 }
+.game-page-button.SkybloomKingdom::before {
+    --button-bg-image: url('images/WorkGames/SkyBloomKingdom.png');
+}
