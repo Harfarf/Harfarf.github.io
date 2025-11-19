@@ -241,6 +241,9 @@ ul li {
 .game-page-button.MLBRoblox::before {
     --button-bg-image: url('images/WorkGames/MLB.png');
 }
+.game-page-button.MLBTowerDefenseRoblox::before {
+    --button-bg-image: url('images/WorkGames/MLBtowerDefense.png');
+}
 .game-page-button.CaminosLegendarios::before {
     --button-bg-image: url('images/WorkGames/CaminosLegendarios.png');
 }
