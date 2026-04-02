@@ -214,6 +214,29 @@ ul li {
     --border: 5px solid rgb(0, 209, 224);
 }
 
+/* ------------------- Youtube Video */
+.video-youtube-container {
+    grid-area: video;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: relative; /* important for responsive ratio */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0; /* this sets the ratio */
+}
+
+.video-youtube-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 /* ------------------- Slideshow */
 .slideshow-container {
     grid-area: slideshow;
